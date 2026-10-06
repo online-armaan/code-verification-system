@@ -1,0 +1,10 @@
+MongoDB: start a local install, run Docker (docker run -d -p 27017:27017 mongo:7), or use Atlas.
+Backend:
+   cd backend
+   cp .env.example .env
+   npm install
+   npm run dev
+
+Fill .env with your MONGO_URI and a JWT_SECRET of at least 32 characters. The README has a one-line command to generate it.
+3. Frontend: cd frontend && npm install && npm run dev, then open http://localhost:5173. The admin console is at /admin.
+4. First admin: cd backend && npm run seed:admin, which prompts for an email and a password of at least 10 characters.
